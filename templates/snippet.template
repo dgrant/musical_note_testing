@@ -1,0 +1,7 @@
+    \begin{lilypond}
+    \new PianoStaff 
+          <<
+        \new Staff \with { \omit TimeSignature} { \clef "treble" {{ treble_note }}4 \bar "|" }
+        \new Staff \with { \omit TimeSignature} { \clef "bass" {% if base_note %}{{ base_note }}{% else %}\skip4{% endif %} \bar "|" }
+      >>
+    \end{lilypond}

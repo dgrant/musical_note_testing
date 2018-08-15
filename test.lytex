@@ -1,0 +1,14 @@
+\documentclass[letterpaper]{article}
+
+\begin{document}
+    Documents for \verb+lilypond-book+ may freely mix music and text.
+    For example,
+
+    \begin{lilypond}
+    \new PianoStaff 
+    <<
+	    \new Staff \with { \omit TimeSignature} { \clef "treble" c'4 \bar "|" }
+	    \new Staff \with { \omit TimeSignature} { \clef "bass" \skip4 \bar "|" }
+	  >>
+    \end{lilypond}
+\end{document} 
